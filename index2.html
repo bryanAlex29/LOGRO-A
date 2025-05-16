@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Agregar Nueva Noticia</title>
 </head>
 <body>
-    <div class="container1">
-    <h1>Ingreso de noticias</h1>
-    </div>
 
-    <form action="#" method="post">
-    <label for="titulo">Título:</label>
-    <input type="text" id="titulo" name="titulo"><br><br>
+<div class="container">
+    <h1>Agregar Nueva Noticia</h1>
+    <form id="newsForm">
+        <label for="title">Título de la Noticia:</label>
+        <input type="text" id="title" name="title" required>
 
-    <label for="fecha">Fecha:</label>
-    <input type="date" id="fecha" name="fecha"><br><br>
+        <label for="content">Contenido de la Noticia:</label>
+        <textarea id="content" name="content" rows="5" required></textarea>
 
-    <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
-    <textarea class="form-control" id="textarea" rows="3"></textarea>
+        <label for="date">Fecha:</label>
+        <input type="date" id="date" name="date" required>
 
-  <button type="submit" class="btn btn-primary" onclick="return continuar();">GUARDAR</button>
-  <label for="exampleFormControlTextarea1" class="form-label">  NOTICIA</label>
-</form>
-<script src="js/bootstrap.bundle.min.js"></script>
+        <button type="submit">Agregar Noticia</button>
+    </form>
+</div>
+
 </body>
 </html>
