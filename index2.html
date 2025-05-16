@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Nueva Noticia</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
 <div class="container">
     <h1>Agregar Nueva Noticia</h1>
     <form id="newsForm">
-        <label for="title">Título de la Noticia:</label>
-        <input type="text" id="title" name="title" required>
+        <label for="TITULO">Título de la Noticia:</label>
+        <input type="text" id="TITULO" name="TITULO" required>
 
-        <label for="content">Contenido de la Noticia:</label>
-        <textarea id="content" name="content" rows="5" required></textarea>
+        <label for="DESCRIPCION">Contenido de la Noticia:</label>
+        <textarea id="DESCRIPCION" name="DESCRIPCION" rows="5" required></textarea>
 
         <label for="date">Fecha:</label>
-        <input type="date" id="date" name="date" required>
+        <input type="date" id="FECHA" name="FECHA" required>
 
         <button type="submit">Agregar Noticia</button>
     </form>
 </div>
-
+<script src="scrip.js"></script>
 </body>
 </html>
