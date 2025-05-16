@@ -5,21 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TARJETA DE TOTICIAS</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <div class="container text-center">
+    <div class="container text-center" style="background-color: blanchedalmond;">
   <div class="row">
     <div class="col">
-      Column
+      TRAJETA DE NOTICIAS
     </div>
 </div>
 
- <div class="contenedor text-center">
+ <div class="contenedor text-center" style="background-color: blueviolet;">
   <div class="row">
     <div class="col">
-      Column
+      <div class="contenido">
+
+        <form class="row g-3">
+  <div class="col-md-4">
+    <label  class="form-label">TITULO DE LA NOTICIA </label>
+    <input type="text" class="form-control" id="TITULO"  required>
+  </div>
+  <div class="col-md-4">
+    <label  class="form-label">DESCRIPCION </label>
+    <input type="text" class="form-control" id="DESCRPCION"  required>
+  </div>
+  <div class="col-md-4">
+    <label  class="form-label">FECHA</label>
+    <div class="input-group">
+      <input type="date" class="form-control" id="FECHA" required>
     </div>
+  </div>
+  
+  
+    
+  <div class="col-12">
+    <button class="btn btn-primary" onclick="guardar()" type="submit">GUARDAR</button>
+    
+  </div>
+</form>
+      </div>
 </div>
-<script src="script.js"></script>
+<script src="scrip.js"></script>
+
 </body>
 </html>
